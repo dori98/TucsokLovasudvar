@@ -1,0 +1,120 @@
+.horses--page{
+    padding:60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 70px;
+    row-gap: 50px;
+    align-self: start;
+    background-color:  white;
+}
+.horses--block{
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 10px 6px #ccc;
+}
+
+.horses--block h1{
+
+    font-size: 40px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.horses--block h2{
+    font-size: 29px;
+    margin-top: 10px;
+    padding-left: 10px;
+    text-align: end;
+    vertical-align: text-bottom;
+}
+.horses-image{
+    min-height: 500px;
+    max-height: 500px;
+}
+.horses--fullPage{
+    padding:50px;
+}
+.horses--title{
+    padding:20px;
+    text-align: center;
+    font-size: 50px;
+    color:rgba(93,154,6,1);
+    font-weight: bold;
+}
+.horses--h3{
+    padding:20px;
+    text-align: center;
+    font-size: 32px;
+    color:rgba(93,154,6,1);
+}
+
+@media screen and (max-width: 1500px) {
+    .horses--page{
+        padding:20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        column-gap: 70px;
+        row-gap: 50px;
+        align-self: start;
+        background-color:  white;
+    }
+
+    .horses-image{
+        min-height: 650px;
+        max-height: 650px;
+    }
+    .horses--fullPage{
+        padding:30px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .horses--page{
+        padding:10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+        align-self: start;
+        background-color:  white;
+    }
+
+    .horses--fullPage{
+        padding:20px;
+    }
+}
+@media screen and (max-width: 980px) {
+    .horses--page{
+        padding:10px;
+        display: grid;
+        grid-template-columns:  1fr;
+        grid-template-rows: 1fr;
+        column-gap: 20px;
+        row-gap: 30px;
+        align-self: start;
+        background-color:  white;
+    }
+
+    .horses--fullPage{
+        padding: 0;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+}
+@media screen and (max-width: 860px) {
+    .horses--fullPage{
+        padding: 0;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .horses--fullPage{
+        padding: 0;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+}

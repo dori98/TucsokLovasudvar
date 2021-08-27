@@ -1,0 +1,327 @@
+.title{
+    text-align: center;
+    padding:  20px;
+    font-size: 60px;
+    color: rgba(93,154,6,1);
+}
+.p{
+    text-align: center;
+    font-size: 25px;
+}
+
+.story{
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+
+
+}
+.storybox{
+
+    text-align: center;
+    padding: 20px;
+    line-height: 1.3;
+    font-size: 25px;
+
+}
+.storybox-div{
+    background-color: rgba(93,154,6,0.5);
+    border-radius: 20px;
+    padding: 5px;
+
+}
+.storybox-div:hover{
+    opacity: 0.6;
+
+}
+.link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:black;
+
+}
+
+.photos--fullpage{
+    padding:50px;
+}
+.photos--fullpage iframe{
+    padding-top: 70px;
+}
+.video{
+    height: 400px;
+    width: 500px;
+    margin-left: 10%;
+}
+.photos--page{
+    padding-right: 20%;
+    padding-left: 20%;
+}
+.photos-mapsize{
+    width: 250px;
+    height: 250px;
+    justify-self: center;
+    margin: auto;
+}
+.photos-mapsize:hover{
+    opacity: 0.8;
+}
+.photos-galery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    column-gap: 20px;
+    row-gap: 20px;
+
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+
+}
+.photos-title{
+    text-align: center;
+    font-size: 30px;
+    background-color: rgba(93,154,6,0.6);
+    width: 240px;
+    margin: auto;
+    padding: 5px;
+}
+/*-----------------------------------------------------Képgaléria a mappában--------------------------------------------------*/
+.galery-page{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+
+    column-gap: 20px;
+    row-gap: 20px;
+    width: 80%;
+    margin: auto;
+    padding: 50px;
+
+}
+.galery-photosize{
+    width: 250px;
+    height: 250px;
+    margin: auto;
+}
+.galery-title{
+    text-align: center;
+    font-size: 45px;
+    padding-top: 30px;
+    color: rgba(93,154,6,1);
+}
+.storybox{
+    line-height: 1.1;
+    margin: auto;
+    padding: 5px;
+}
+/*-----------------------------------------------------Méretváltoztatás-----------------------------------------------------*/
+@media screen and (max-width: 1600px) {
+    .galery-page{
+        grid-template-columns: 1fr 1fr 1fr 1fr  ;
+        width: 90%;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .photos-galery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr  ;
+        column-gap: 20px;
+        width: 80%;
+        margin: auto;
+        padding: 30px;
+
+    }
+}
+@media screen and (max-width: 1250px) {
+    .galery-page{
+        grid-template-columns: 1fr 1fr 1fr 1fr  ;
+
+    }
+}
+@media screen and (max-width: 1200px) {
+    .video{
+        height: 450px;
+        margin-left: 0;
+
+        width: 50%;
+    }
+    .story{
+        width: 70%;
+
+    }
+    .galery-photosize{
+        width: 200px;
+        height: 200px;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .photos--fullpage{
+        padding:50px;
+    }
+    .photos--page{
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    .storybox{
+        font-size: 18px;
+    }
+    .p{
+        text-align: center;
+        font-size: 20px;
+    }
+    .story{
+        width: 80%;
+        padding: 5px;
+
+
+    }
+    .photos-mapsize{
+        width: 200px;
+        height: 200px;
+        justify-self: center;
+        margin: auto;
+    }
+    .photos-title{
+        text-align: center;
+        font-size: 30px;
+        background-color: rgba(93,154,6,0.6);
+        width: 190px;
+        margin: auto;
+        padding: 5px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .galery-photosize{
+        width: 180px;
+        height: 180px;
+        margin: auto;
+    }
+    .galery-page{
+        grid-template-columns: 1fr 1fr 1fr  ;
+        column-gap: 15px;
+        row-gap: 15px;
+        padding: 30px;
+
+    }
+}
+@media screen and (max-width: 800px) {
+
+    .photos-galery{
+        display: grid;
+        grid-template-columns: 1fr 1fr  ;
+        column-gap: 10px;
+        row-gap: 20px;
+        width: 90%;
+        margin: auto;
+        padding: 30px;
+
+    }
+}
+@media screen and (max-width: 750px) {
+    .photos--image{
+        min-height: 300px;
+        max-height: 300px;
+    }
+    .photos--fullpage{
+        padding:40px;
+    }
+    .video{
+        height: 350px;
+        width: 50%;
+        margin-left: 0;
+
+    }
+    .story{
+        width: 90%;
+        padding: 5px;
+
+    }
+
+
+}
+@media screen and (max-width: 650px) {
+    .photos--image{
+        min-height: 200px;
+        max-height: 200px;
+    }
+    .photos--fullpage{
+        padding:30px;
+    }
+    .video{
+        height: 300px;
+        width: 100%;
+    }
+    .photos--page{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .story{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+
+
+    }
+    .storybox{
+        font-size: 20px;
+        padding: 15px;
+    }
+    .p{
+        text-align: center;
+        font-size: 17px;
+    }
+    .galery-photosize{
+        width: 150px;
+        height: 150px;
+    }
+    .galery-page{
+        grid-template-columns: 1fr 1fr 1fr  ;
+        column-gap: 15px;
+        row-gap: 15px;
+        padding: 20px;
+
+    }
+}
+@media screen and (max-width: 500px) {
+
+    .photos-mapsize {
+        width: 150px;
+        height: 150px;
+
+    }
+    .photos-title{
+        font-size: 20px;
+        width: 140px;
+    }
+
+    .galery-page{
+        grid-template-columns: 1fr 1fr ;
+
+    }
+}
+@media screen and (max-width: 470px) {
+
+    .photos--image{
+        min-height: 150px;
+        max-height: 150px;
+    }
+    .photos--fullpage{
+        padding:20px;
+    }
+    .video{
+        height: 250px;
+        width: 100%;
+    }
+    .storybox{
+        font-size: 15px;
+        padding: 15px;
+    }
+}

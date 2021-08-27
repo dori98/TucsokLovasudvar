@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');/*1*/
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap'); /*font-family: 'RocknRoll One', sans-serif;2*/
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap'); /*font-family: 'Indie Flower', cursive;3*/
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');/*font-family: 'Pacifico', cursive;4*/
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');/*font-family: 'Satisfy', cursive;5*/
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');/*font-family: 'Great Vibes', cursive;6*/
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');/*font-family: 'Pirata One', cursive;7*/
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap'); /*font-family: 'Akaya Kanadaka', cursive;8*/
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');/*font-family: 'Aclonica', sans-serif;9*/
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');/*font-family: 'Fredericka the Great', cursive;10*/
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');/*font-family: 'Rye', cursive;11*/
+
+:root{
+    --font-size: 95px;
+}
+.index--fullpage{
+    background: radial-gradient( rgba(255,255,255,1) 10%, rgba(93,154,6,0.8) 80%);
+    height: 110vh;
+
+}
+.item-5 h1 {
+    font-family: 'Fredericka the Great', cursive;
+    display: grid;
+}
+@media screen and (min-width: 1100px) {
+    .index--page{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows:1fr  1fr 1fr   ;
+        row-gap: 30px;
+        column-gap: 30px;
+        padding:50px;
+    }
+    .item-1 {
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: right;
+    }
+    .item-2{
+        grid-column: 2;
+        grid-row:  3;
+        justify-self: center;
+    }
+    .item-3{
+        grid-column: 1;
+        grid-row:  2;
+        justify-self: right;
+    }
+    .item-4{
+        grid-column: 1;
+        grid-row: 3;
+        justify-self: right;
+    }
+    .item-5{
+        grid-column: 2;
+        grid-row: 1;
+        text-align: center;
+        padding-top: 30px;
+        align-self: center;
+    }
+    .item-5 h1 {
+        font-size:  var(--font-size);
+        font-family: 'Fredericka the Great', cursive;
+        display: grid;
+    }
+    .item-6{
+        grid-column:3;
+        grid-row: 1;
+        justify-self: left;
+    }
+    .item-7{
+        grid-column: 3;
+        grid-row: 2;
+        justify-self: left;
+    }
+    .item-8{
+        grid-column:3;
+        grid-row: 3;
+        justify-self: left;
+    }
+    .item-9{
+        grid-column: 2;
+        grid-row:  2;
+        justify-self: center;
+    }
+    .index--img{
+        height: 70%;
+        width: 70%;
+    }
+
+    .index--img__box{
+        box-shadow: 5px 5px 10px 6px black;
+    }
+
+    .index--img__box:hover{
+        opacity: 0.7 ;
+    }
+}
+@media screen and (max-width: 1099px) {
+
+    .index--page{
+        display: grid;
+        grid-template-rows: 0.5fr 1fr 1fr 1fr  1fr 1fr 1fr 1fr 1fr   ;
+        row-gap: 30px;
+
+
+    }
+    .index--fullpage{
+        background: radial-gradient( rgba(255,255,255,1) 10%, rgba(93,154,6,0.8) 80%);
+        height: 100%;
+
+    }
+    .item-1 {
+        grid-row: 2;
+        justify-self: center;
+    }
+    .item-2{
+        grid-row: 3;
+        justify-self: center;
+    }
+
+    .item-3{
+        grid-row: 4;
+        justify-self: center;
+    }
+    .item-4{
+        grid-row: 5;
+        justify-self: center;
+    }
+    .item-5{
+        grid-row: 1;
+        text-align: center;
+        padding-top: 20px;
+
+
+    }
+    .item-5 h1 {
+        font-size:  calc(var(--font-size)*0.7);
+        /*font-weight: bold;*/
+
+    }
+
+    .item-6{
+        grid-row: 6;
+        justify-self: center;
+    }
+    .item-7{
+        grid-row: 7;
+        justify-self: center;
+    }
+    .item-8{
+        grid-row: 8;
+        justify-self: center;
+    }
+    .item-9{
+        grid-row: 9;
+        justify-self: center;
+    }
+    .index--img{
+        height: 50%;
+        width: 50%;
+    }
+
+    .index--img__box{
+        box-shadow: 5px 5px 10px 6px black;
+    }
+
+    .index--img__box:hover{
+        opacity: 0.7 ;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .item-5 h1 {
+        font-size:  calc(var(--font-size)*0.8);
+    }
+    .index--img{
+        height: 70%;
+        width: 70%;
+    }
+
+}
+@media screen and (max-width: 430px) {
+    .item-5 h1 {
+        font-size:  calc(var(--font-size)*0.6);
+
+    }
+}

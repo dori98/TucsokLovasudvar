@@ -1,0 +1,352 @@
+/*állatink, versenyzőink oldal*/
+.competitor--page{
+    padding:50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr;
+    column-gap: 50px;
+    row-gap: 50px;
+    align-self: start;
+    background-color:  white;
+}
+
+.competitor--block{
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 10px 6px #ccc;
+}
+.competitor--block:hover{
+  opacity: 70%;
+}
+.competitor--block h1{
+    font-size: 30px;
+    padding:20px;
+    text-align: center;
+    color:black;
+}
+.competitor-image{
+    min-height: 400px;
+    max-height: 400px;
+}
+.competitors--link {
+    text-decoration: none;
+}
+.competitors--link:hover{
+    opacity: 0.7;
+}
+
+/* egy állat, versenyző*/
+.competitor--competitors{
+    padding-top: 30px;
+}
+.competitor--competitors h1{
+    text-align: center;
+    font-size: 50px;
+    color: rgba(93,154,6,1);
+
+}
+.competitor--competitors p{
+    text-align: center;
+    font-size: 30px;
+    padding:15px;
+    color: black;
+}
+
+
+
+
+
+
+
+
+/* single competitor pages*/
+.single--competitor--page{
+    margin: auto;
+    width:80%;
+}
+.single-competitor{
+    display: grid;
+    grid-template-columns:  0.5fr 1fr ;
+    column-gap: 20px ;
+    padding: 30px;
+}
+.single-competitor p{
+    font-size: 20px;
+    line-height: 2;
+    text-align: justify;
+}
+.single-competitor-textblock{
+    display: grid;
+    align-self: center;
+}
+.single-competitorImage{
+    max-width: 700px;
+    min-height: 600px;
+    box-shadow: 10px 10px 5px grey;
+}
+.single--competitor--title h1{
+    padding: 40px;
+    font-size: 50px;
+    color: rgba(93,154,6,1);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.backButton--div{
+    text-align: center;
+    padding:30px;
+}
+.backButton{
+    font-size: 32px;
+    text-decoration: none;
+    color: rgba(93,154,6,1);
+    font-weight: bold;
+}
+
+.backButton:hover{
+    font-size: 40px;
+}
+
+/*.single--competitor--page{
+    margin: auto;
+    width:80%;
+}
+.single-competitor{
+    display: grid;
+    grid-template-columns:  0.4fr 1fr ;
+    column-gap: 20px ;
+    padding: 30px;
+}
+.single-competitor p{
+    font-size: 30px;
+    line-height: 2;
+    text-align: justify;
+}
+.competitor--competitors p{
+
+    font-size: 30px;
+    ;
+}
+.single-competitorImage{
+    display: grid;
+    max-width: 700px;
+    box-shadow: 10px 10px 5px grey;
+    justify-self: center;
+}
+.single--competitor--title h1{
+     padding: 40px;
+     font-size: 50px;
+     color: darkgreen;
+    font-weight: bold;
+    margin-bottom: 20px;
+ }
+.backButton--div{
+    text-align: center;
+    padding:30px;
+}
+.backButton{
+    font-size: 32px;
+    text-decoration: none;
+    color: rgba(93,154,6,1);
+    font-weight: bold;
+}
+
+.backButton:hover{
+    font-size: 40px;
+}*/
+
+@media screen and (max-width: 1385px) {
+    .competitor--page{
+        padding:70px;
+        display: grid;
+        grid-template-columns: 1fr 1fr  ;
+        grid-template-rows: 1fr;
+        column-gap: 50px;
+        row-gap: 50px;
+        align-self: start;
+        background-color:  white;
+    }
+    .single--competitor--page{
+        margin: auto;
+        width:90%;
+    }
+    .single-competitor{
+        display: grid;
+        grid-template-columns:  0.5fr 1fr ;
+        column-gap: 20px ;
+        padding: 30px;
+    }
+    .single-competitor p{
+        font-size: 28px;
+        line-height: 1.8;
+        text-align: justify;
+    }
+    .backButton:hover{
+        text-decoration: underline;
+        font-size: 32px;
+    }
+
+}
+@media screen and (max-width: 1043px) {
+    .competitor--page{
+        display: grid;
+        padding:80px;
+
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr;
+        row-gap: 50px;
+        align-self: start;
+        background-color:  white;
+    }
+    .competitor-image{
+        min-width: 300px;
+
+    }
+    .single-competitor{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:  0.1fr 1fr ;
+        row-gap: 20px ;
+        padding: 30px;
+    }
+    .single-competitorImage{
+        display: grid;
+        margin-left:15%;
+        margin-right:15%;
+        max-height:550px;
+        box-shadow: 10px 10px 5px grey;
+        justify-self: center;
+    }
+    .single--competitor--title h1{
+        padding: 20px;
+        font-size: 45px;
+        color: darkgreen;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .single-competitor p{
+        font-size: 24px;
+        line-height: 1.9;
+        text-align: justify;
+    }
+    .competitor--competitors p{
+        font-size: 25px;
+
+    }
+}
+@media screen and (max-width: 700px) {
+    .competitor--page{
+        display: grid;
+        padding:70px;
+
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr;
+        row-gap: 50px;
+        align-self: start;
+        background-color:  white;
+    }
+    .competitor-image{
+        max-width: 100%;
+
+    }
+
+    .competitor--competitors h1{
+        text-align: center;
+        font-size: 40px;
+    }
+    .single-competitor p{
+        font-size: 20px;
+        line-height: 1.7;
+        text-align: justify;
+    }
+    .competitor--competitors p{
+        font-size: 20px;
+
+    }
+}
+@media screen and (max-width: 600px) {
+
+    .competitor--page{
+        display: grid;
+        padding:30px;
+
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr;
+        row-gap: 50px;
+        align-self: start;
+        background-color:  white;
+    }
+    .competitor-image{
+        min-height:400px;
+        max-height: 400px;
+    }
+    .competitor--fullPage{
+        padding:20px;
+    }
+    .single-competitor p{
+        font-size: 18px;
+        line-height: 1.7;
+        text-align: justify;
+    }
+
+
+}
+@media screen and (max-width: 500px) {
+
+
+
+    .competitor-image{
+        min-height:330px;
+        max-height: 330px;
+    }
+    .competitor--fullPage{
+        padding:20px;
+    }
+    .single-competitor p{
+        font-size: 18px;
+        line-height: 1.7;
+        text-align: justify;
+    }
+    .single-competitorImage{
+        display: grid;
+        margin-left:9%;
+        margin-right:9%;
+        max-height:250px;
+        min-height: 250px;
+        box-shadow: 10px 10px 5px grey;
+        justify-self: center;
+    }
+
+}
+@media screen and (max-width: 400px) {
+
+    .competitor--page{
+        display: grid;
+        padding:20px;
+
+        grid-template-rows: 1fr;
+        row-gap: 50px;
+        align-self: start;
+        background-color:  white;
+    }
+    .competitor-image{
+        min-height:250px;
+        max-height: 250px;
+    }
+    .competitor--fullPage{
+        padding:0;
+    }
+    .single-competitor p{
+        font-size: 15px;
+        line-height: 1.7;
+        text-align: justify;
+    }
+    .single--competitor--page{
+        margin: auto;
+        width:95%;
+    }
+    .single-competitorImage{
+         max-height:200px;
+        min-height: 200px;
+    }
+
+
+}
