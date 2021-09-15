@@ -1,10 +1,9 @@
 import React from "react"
 import {graphql} from "gatsby"
 import Layout from "../components/Layout"
-import Image from "gatsby-image"
 import Rita from "../assets/lovarda_uj.jpeg"
 import Rita2 from "../assets/Rita3.jpg"
-import Rita3 from "../assets/Rita2.jpg"
+import Rita3 from "../assets/Rita2.jpg" 
 
 
 import * as styles from "../css/about.module.css"
