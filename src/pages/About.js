@@ -2,6 +2,11 @@ import React from "react"
 import {graphql} from "gatsby"
 import Layout from "../components/Layout"
 import Image from "gatsby-image"
+import Rita from "../assets/lovarda_uj.jpeg"
+import Rita2 from "../assets/Rita3.jpg"
+import Rita3 from "../assets/Rita2.jpg"
+
+
 import * as styles from "../css/about.module.css"
 
 const ComponentName = ({data}) => {
@@ -17,37 +22,39 @@ const ComponentName = ({data}) => {
     return (
         <Layout>
 
-                <div className={styles.indexPage}>
-                    <div className={styles.card}>
-                        <h1 className={styles.h1}>Bemutatkozás</h1>
-                        {rolunk.map(r => {
-                            return (
-                                <div key={r.id} className={styles.indexContainerRight}>
-                                    <Image fluid={r.fenykep.fluid} className={styles.indexImg}/>
-                                    <p className={styles.p}>{r.szoveg.szoveg}</p>
-                                </div>
-                            )
-                        })}
-                    </div>
+            <div>
+                {rolunk.map(r => {
+                    return (
+                        <div key={r.id} className={styles.gridContact}>
+                            <h1 className={`${styles.fullwidth} ${styles.h1}`}>Bemutatkozás</h1>
+                            <p className={`${styles.fullwidth} ${styles.p}`}>{r.szoveg.szoveg} </p>
+                            <img src={Rita} className={`${styles.col6} ${styles.indexImg}`}/>
 
-                </div>
-                <div className={styles.indexPage}>
-                    <div className={styles.card}>
-                        <h1 className={styles.h1}>Edzőnk</h1>
-                        {bemutatkozas.map(r => {
-                            return (
-                                <div key={r.id} className={styles.indexContainerLeft}>
-                                    <p className={styles.p}>{r.szoveg.szoveg}</p>
-                                </div>
-                            )
-                        })}
-                    </div>
+                            <img src={Rita2} className={`${styles.col6} ${styles.indexImg}`}/>
+                        </div>
+                    )
+                })}
+            </div>
 
-                </div>
+            <div>
+                {bemutatkozas.map(r => {
+                    return (
+                        <div key={r.id} className={styles.gridContact}>
+                            <h1 className={`${styles.fullwidth} ${styles.h1}`}>Edzőnk</h1>
+                            <p className={`${styles.fullwidth} ${styles.p}`}>{r.szoveg.szoveg}</p>
 
-   </Layout>
- )
- }
+                            <img src={Rita3} className={`${styles.fullwidth} ${styles.indexImg}`}/>
+
+
+                        </div>
+                    )
+                })}
+            </div>
+
+
+        </Layout>
+    )
+}
 export const query = graphql`
  {
     allContentfulRolunk {
@@ -56,11 +63,7 @@ export const query = graphql`
         szoveg {
           szoveg
         }
-         fenykep {
-            fluid {
-               ...GatsbyContentfulFluid
-            }
-          }
+        
       }
     },
      allContentfulBemutatkozas {
@@ -73,4 +76,4 @@ export const query = graphql`
   }
 `
 
-                    export default ComponentName
+export default ComponentName

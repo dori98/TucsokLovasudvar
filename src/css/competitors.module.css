@@ -15,7 +15,7 @@
     box-shadow: 5px 5px 10px 6px #ccc;
 }
 .competitor--block:hover{
-  opacity: 70%;
+  opacity: 80%;
 }
 .competitor--block h1{
     font-size: 30px;
