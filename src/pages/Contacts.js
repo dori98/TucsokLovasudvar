@@ -3,9 +3,17 @@ import {Link} from 'gatsby'
 import Layout from "../components/Layout"
 import  * as styles from "../css/contacts.module.css"
 import  * as style from "../css/prices.module.css"
+import Seo from "../components/SEO";
 const Contacts = () => {
     return(
         <Layout>
+            <Seo
+                lang={"hu"}
+                title={"Elérhetőség"}
+                description={"A Tücsök lovasudvar elérhetősége."}
+                keywords={"tucsok, tücsök, lovarda, lovasudvar, ló, lo, Benedek Rita, lovasoktatás, lovasoktatas, elerhetoseg, email, Bodmer , Bodmér"}
+                url={"/Contacts"}
+            />
             <div className={styles.contactContainer}>
                 <div className={styles.contactDiv}>
                     <h1>Kapcsolatok</h1>
@@ -26,7 +34,7 @@ const Contacts = () => {
                     </div>
                 </div>
 
-                 <iframe
+                 <iframe title={"video"}
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d145100.36981746941!2d18.470634363809403!3d47.48675002292709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476a13e76e5c3bab%3A0x1e9d65c357e06622!2zVMO8Y3PDtmsgTG92YXN1ZHZhcg!5e0!3m2!1shu!2shu!4v1621865659370!5m2!1shu!2shu"
                         allowFullScreen=""
                         loading="lazy"

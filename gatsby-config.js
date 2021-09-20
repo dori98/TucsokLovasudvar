@@ -6,10 +6,6 @@ module.exports = {
   siteMetadata: {
         title: "TucsokLovasudvar",
         description:`Tücsök lovasudvar honlapja`,
-      titleTemplate:`%s | Tücsök Lovasudvar`,
-      url:`https://tucsok.netlify.app`,
-      twitterUsername:`@TucsokLovasudvar`,
-      image:`/MainImg.png`
   },
 
   plugins: [

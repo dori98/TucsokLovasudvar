@@ -2,6 +2,7 @@ import React from "react"
 import {graphql, Link} from "gatsby";
 import Image from "gatsby-image"
 import * as styles from "../css/index.module.css"
+import Seo from "../components/SEO";
 
 const index = ({data}) => {
     const {
@@ -17,6 +18,13 @@ const index = ({data}) => {
 
     return (
         <div className={styles.indexFullpage}>
+            <Seo
+                lang={"hu"}
+                title={"Kezdőlap"}
+                description={"A Tücsök lovasudvar kezdőlap."}
+                keywords={"tucsok, tücsök, lovarda, lovasudvar, lovaglas, lovaglás, arak, árak, képek, kepek, bemutatkozas, bemutatkozás"}
+                url={"/"}
+            />
             <div className={styles.indexPage}>
                     <Link to='/About' className={`${styles.item1} ${styles.indexImg}`}><Image fluid={rolunk[0].tabla.fluid} className={styles.indexImg__box}/></Link>
                 <div className={`${styles.item2} ${styles.indexImg}`}>

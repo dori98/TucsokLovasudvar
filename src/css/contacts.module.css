@@ -19,7 +19,6 @@
     line-height: 2.2;
     font-size: 20px;
     margin-left: 30px;
-
 }
 .contact--div h1{
     font-size: 30px;
@@ -30,7 +29,6 @@
     margin-top: 30px;
     line-height: 1.5;
     text-align: center;
-
 }
 .bigmap{
     width: 700px;
@@ -46,6 +44,12 @@
     color: rgba(93,154,6,1);
     text-decoration: none;
 }
+@media screen and (min-width: 1980px) {
+    .contact--container {
+        max-width: 1500px;
+        margin: auto;
+    }
+}
 @media screen and (max-width: 1200px) {
     .contact--container{
         padding:50px;
@@ -58,7 +62,6 @@
     .bigmap{
         max-width: 650px;
         height: 350px;
-
     }
 }
 @media screen and (max-width: 680px) {
@@ -75,7 +78,6 @@
         max-width: 300px;
         height: 200px;
     }
-
     .contact--div p{
         line-height: 2;
         font-size: 18px;

@@ -4,6 +4,7 @@ import Layout from "../components/Layout"
 import * as styles from "../css/ponyKlub.module.css"
 import * as style from "../css/prices.module.css"
 import Image from "gatsby-image";
+import Seo from "../components/SEO";
 
 const PonyKlub = ({data}) => {
    const {
@@ -14,6 +15,13 @@ const PonyKlub = ({data}) => {
 
    return (
        <Layout>
+           <Seo
+               lang={"hu"}
+               title={"Póni klub"}
+               description={"A Tücsök lovasudvar póni klubb oldala."}
+               keywords={"tucsok, tücsök, lovarda, lovasudvar, ló, lo, Benedek Rita, lovasoktatás, lovasoktatas, poni, pony, klub, versenyzok, versenyzők, verseny"}
+               url={"/PonyClub"}
+           />
           <section className={styles.page}>
               <h1 className={styles.h1}>Tücsök Póni Klub</h1>
               {pony.map(r => {
@@ -33,7 +41,7 @@ const PonyKlub = ({data}) => {
                                       {
                                           x.kepek.map(y=>{
                                               return(
-                                                  <div>
+                                                  <div className={styles.galeryImgPosition}>
                                                       <Image fluid={y.fluid} className={`${styles.galeryPhotosize} ${"image-for-modal"}`}/>
                                                   </div>
                                               )

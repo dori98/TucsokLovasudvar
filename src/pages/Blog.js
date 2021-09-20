@@ -4,6 +4,7 @@ import {graphql} from "gatsby"
 import Image from "gatsby-image"
 import ReactMarkdown from "react-markdown"
 import * as styles from "../css/blog.module.css"
+import Seo from "../components/SEO";
 
 const Blog = ({data}) => {
     const {
@@ -12,6 +13,13 @@ const Blog = ({data}) => {
     } = data
     return (
         <Layout>
+            <Seo
+                lang={"hu"}
+                title={"Hírek"}
+                description={"A Tücsök lovasudvar hírei."}
+                keywords={"tucsok, tücsök, lovarda, lovasudvar, ló, lo, Benedek Rita, lovasoktatás, lovasoktatas, hirek, hírek"}
+                url={"/Blog"}
+            />
             <h1 className={styles.title}>Hírek</h1>
 
             <div className={styles.page}>

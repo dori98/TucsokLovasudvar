@@ -11,6 +11,7 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
+import Seo from "../components/SEO";
 
 const Form = () => {
     const [open, setOpen] = React.useState(false);
@@ -26,57 +27,50 @@ const Form = () => {
     const handleChange = (event) => {
         setChecked(event.target.checked);
     };
-    return(
+    return (
         <Layout>
+            <Seo
+                lang={"hu"}
+                title={"Jelentkezés lovaglásra"}
+                description={"A Tücsök lovasudvar formja ahol jelentkezni lehet lovaglásra."}
+                keywords={"tucsok, tücsök, lovarda, lovasudvar, ló, lo, Benedek Rita, lovasoktatás, lovasoktatas"}
+                url={"/Form"}
+            />
             <section className={styles.contactPage}>
                 <article className={styles.contactForm}>
                     <h1>Jelentkezés Lovaglásra</h1>
-                    <p> Ha szívesen jönnél hozzánk lovagolni kérlek töltsd ki ezt a formot, és mi felvesszük veled  a kapcsolatot.
+                    <p> Ha szívesen jönnél hozzánk lovagolni kérlek töltsd ki ezt a formot, és mi felvesszük veled a
+                        kapcsolatot.
                         Lovaglás csak előre egyeztetett időpontban lehetséges.
                     </p>
-                    <form action="https://formspree.io/f/mdoygngk" method="POST">
+                    <form
+                        action="https://gmail.us5.list-manage.com/subscribe/post?u=8d29b6f027a19d427131d32dd&amp;id=f203cbe20b"
+                        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
                         <div className={styles.formGroup}>
-                            <input
-                                type="name"
-                                name="name"
-                                placeholder="Név"
-                                required={true}
-                                className={styles.formControl}
-                            />
-                            <input
-                                type="email"
-                                name="email"
-                                placeholder="email"
-                                required={true}
-                                className={styles.formControl}
-                            />
-                            <input
-                                type="tel"
-                                name="phoneNumber"
-                                placeholder="telefonszám (+36701234567)"
-                                required={true}
-                                maxLength={12}
-                                className={styles.formControl}
-                            />
-                            <textarea
-                                name="Megjegyzés"
-                                rows="5"
-                                placeholder="Megjegyzés"
-                                className={styles.formControl}
-                            ></textarea>
+                            <input type="text" name="LNAME" id="mce-LNAME" required
+                                   className={styles.formControl} placeholder="Vezetéknév"/>
+                            <input type="text" name="FNAME" id="mce-FNAME" required
+                                   className={styles.formControl} placeholder="Keresztnév"/>
+                            <input type="email" name="EMAIL" id="mce-EMAIL" required
+                                   className={styles.formControl} placeholder="Email"/>
+                            <input type="text" name="MMERGE3" id="mce-MMERGE3" required
+                                   className={styles.formControl} placeholder="Telefonszám (+36701234567)"/>
+                            <input type="textarea" name="MMERGE4" id="mce-MMERGE4" rows="5"
+                                   placeholder="Megjegyzés" className={styles.formControl}/>
                             <div className={styles.links}>
-                                <p>Kérlek töltsd ki az alábbi nyilatkozatokat és hozdd magaddal az első lovaglásra vagy küldd el e-mailben az alábbi emailcímre: tucsoklovasudvar@gmail.com
+                                <p>Kérlek töltsd ki az alábbi nyilatkozatokat és hozdd magaddal az első lovaglásra vagy
+                                    küldd el e-mailben az alábbi emailcímre: tucsoklovasudvar@gmail.com
                                     Nyilatkozat hiányában a lovaglás nem lehetséges!
                                 </p>
-                                <a href={felnott} download >
+                                <a href={felnott} download>
                                     Felnőtt nyilatkozat
                                 </a>
                                 <br/>
-                                <a href={gyerek} download >
-                                    Gyerek  nyilatkozat
+                                <a href={gyerek} download>
+                                    Gyerek nyilatkozat
                                 </a>
                                 <br/>
-                                <a href={adatvedelem} download >
+                                <a href={adatvedelem} download>
                                     Adatvédelmi nyilatkozat
                                 </a>
                             </div>
@@ -85,7 +79,7 @@ const Form = () => {
                                     variant="outlined"
                                     onClick={handleClickOpen}
                                     style={{
-                                        border:"none"
+                                        border: "none"
                                     }}
                                 >
                                     Az adatvédelmi nyilatkozatot elfogadom
@@ -99,10 +93,13 @@ const Form = () => {
                                     <DialogTitle id="alert-dialog-title">{"Adatvédelmi nyilatkozat"}</DialogTitle>
                                     <DialogContent>
                                         <DialogContentText id="alert-dialog-description">
-                                            Hozzájárulok, hogy Benedek Rita (Tücsök Lovasudvar, ev.ig.sz.: 44681302), lovasoktatás, edzés,
-                                            lovastábor, lovakkal való foglalkozás során a szülői nyilatkozat kitöltésével a személyes adataimat
+                                            Hozzájárulok, hogy Benedek Rita (Tücsök Lovasudvar, ev.ig.sz.: 44681302),
+                                            lovasoktatás, edzés,
+                                            lovastábor, lovakkal való foglalkozás során a szülői nyilatkozat
+                                            kitöltésével a személyes adataimat
                                             felvegye, tárolja.
-                                            Tudomásul veszem, hogy minden rólam felvett adat a GDPR előírásainak megfelelően kerül kezelésre
+                                            Tudomásul veszem, hogy minden rólam felvett adat a GDPR előírásainak
+                                            megfelelően kerül kezelésre
                                             és tárolásra.
 
                                         </DialogContentText>
@@ -121,7 +118,15 @@ const Form = () => {
                                 />
 
                             </div>
-                            <button type="submit" className={`${styles.submitBtn} ${styles.btn}`}>
+                            <div style={{position: "absolute", left: "-5000px"}} aria-hidden="true">
+                                <input
+                                    type="text"
+                                    name="b_8d29b6f027a19d427131d32dd_f203cbe20b"
+                                    tabIndex="-1"
+                                    value=""
+                                />
+                            </div>
+                            <button type="submit" name="subscribe" id="mc-embedded-subscribe" className={`${styles.submitBtn} ${styles.btn}`}>
                                 Küldés
                             </button>
                         </div>

@@ -1,9 +1,9 @@
 import React from "react"
 import Layout from "../components/Layout"
 import {graphql, Link} from "gatsby"
-import ImageGallery from 'react-image-gallery';
 import * as styles from "../css/photos.module.css";
 import Image from "gatsby-image";
+import Seo from "../components/SEO";
 
 const Pictures = ({data}) => {
     const {
@@ -12,6 +12,13 @@ const Pictures = ({data}) => {
     } = data
     return (
         <Layout>
+            <Seo
+                lang={"hu"}
+                title={"Képek és történetek"}
+                description={"A Tücsök lovasudvar képek és történetek oldala."}
+                keywords={"tucsok, tücsök, lovarda, lovasudvar, tortenetek, történetek, képek, kepek"}
+                url={"/Pictures"}
+            />
             <div className={styles.photosFullpage}>
                 <h1 className={styles.title}>Történetek</h1>
                 <p className={styles.p}>Lovaink, Kutyáink mesélték...</p>

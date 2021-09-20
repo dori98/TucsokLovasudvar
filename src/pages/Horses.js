@@ -4,6 +4,7 @@ import {graphql, Link} from "gatsby"
 
 import Image from "gatsby-image";
 import  * as styles from "../css/competitors.module.css"
+import Seo from "../components/SEO";
 
 
 const Horses = ({data}) => {
@@ -14,6 +15,13 @@ const Horses = ({data}) => {
     return (
 
         <Layout>
+            <Seo
+                lang={"hu"}
+                title={"Állataink"}
+                description={"A Tücsök lovasudvarban található állatok."}
+                keywords={"tucsok, tücsök, lovarda, lovasudvar, ló, lo, Benedek Rita, lovasoktatás, lovasoktatas, macska, kutya, állat, allat"}
+                url={"/Horses"}
+            />
             <div className={styles.competitorCompetitors}>
                 <h1>Lovaink</h1>
             </div>

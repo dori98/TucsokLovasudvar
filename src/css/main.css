@@ -68,12 +68,7 @@ html {
 
 html,
 .root {
-   /* font-family: 'Libre Baskerville', serif;*/
     font-family: 'Akaya Kanadaka', cursive;
-   /* font-family: 'Nunito', sans-serif;*/
-    /*font-family: 'Alegreya', serif;*/
-    /*font-family: 'Merienda', cursive;*/
-    /*font-family: 'Annie Use Your Telescope', cursive;*/
 }
 
 .image-for-modal {

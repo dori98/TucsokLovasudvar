@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/Layout";
 import {graphql, Link} from "gatsby"
 import * as styles from "../css/prices.module.css"
+import Seo from "../components/SEO";
 
 const Prices = ({data}) => {
     const {
@@ -19,6 +20,13 @@ const Prices = ({data}) => {
     } = data
     return (
         <Layout>
+            <Seo
+                lang={"hu"}
+                title={"Árak"}
+                description={"A Tücsök lovasudvar árai."}
+                keywords={"tucsok, tücsök, lovarda, lovasudvar, ló, lo, Benedek Rita, lovasoktatás, lovasoktatas, arak, árak"}
+                url={"/Prices"}
+            />
             <div>
                 <div className={styles.pricesPage}>
                     <div className={styles.pricesDiv}>

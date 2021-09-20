@@ -1,11 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
 :root {
-
-
     --clr-grey-10: hsl(210, 36%, 96%);
-
-
     --transition: all 0.3s linear;
     --spacing: 0.2rem;
     --radius: 0.25rem;
@@ -13,7 +9,6 @@
     --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     --max-width: 1170px;
     --fixed-width: 700px;
-
 }
 .contact-page {
     display: grid;
@@ -29,7 +24,6 @@
     width: 80vw;
     max-width: 35rem;
     font-family: 'Libre Baskerville', serif;
-
 }
 .contact-form:hover {
     box-shadow: var(--dark-shadow);
@@ -106,15 +100,14 @@
     text-decoration: none;
     color: black;
     font-weight: bold;
-
 }
 .links a:hover{
     text-decoration: underline;
     color: darkgreen;
 }
+x
 @media screen and (max-width: 600px) {
     .contact-form p {
         font-size: 15px;
-
     }
 }

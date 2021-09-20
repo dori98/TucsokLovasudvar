@@ -12,5 +12,4 @@ const Card = ({title, img, description}) => {
         </div>
     )
 }
-
 export default Card

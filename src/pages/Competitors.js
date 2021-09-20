@@ -3,6 +3,7 @@ import Layout from "../components/Layout"
 import { graphql, Link } from "gatsby"
 import Image from "gatsby-image"
 import  * as styles from "../css/competitors.module.css"
+import Seo from "../components/SEO";
 
 const Competitors = ({data}) => {
     const{
@@ -11,6 +12,13 @@ const Competitors = ({data}) => {
 
     return(
         <Layout>
+            <Seo
+                lang={"hu"}
+                title={"Versenyzők"}
+                description={"A Tücsök lovasudvar  versenyzői."}
+                keywords={"tucsok, tücsök, lovarda, lovasudvar, ló, lo, lovasoktatás, lovasoktatas, versenyzők, versenyzok, verseny, díjlovaglás, dijlovaglas, díjugratás, dijugratas "}
+                url={"/Competitors"}
+            />
             <div className={styles.competitorCompetitors}>
                 <h1>Versenyzőink</h1>
                 <p > Ha kíváncsi vagy mit jelent versenyzőink számára a lovaglás kattints a képükre!</p>

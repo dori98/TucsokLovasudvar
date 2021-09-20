@@ -1,90 +1,33 @@
 import React from "react"
-import PropTypes from "prop-types"
-import { Helmet } from "react-helmet"
-import { useLocation } from "@reach/router"
-import { useStaticQuery, graphql } from "gatsby"
+import {Helmet} from "react-helmet"
+import favicon from "/src/assets/logo3.png"
+import defaultImage from "/src/assets/SeoImage.png"
 
-const SEO = ({ title, description, image, article }) => {
-    const { pathname } = useLocation()
-    const { site } = useStaticQuery(query)
+const Seo = ({lang, title, description, keywords, image, url, isBlogPost, noIndex}) => {
 
-    const {
-        defaultTitle,
-        titleTemplate,
-        defaultDescription,
-        siteUrl,
-        defaultImage,
-        twitterUsername,
-    } = site.siteMetadata
-
-    const seo = {
-        title: title || defaultTitle,
-        description: description || defaultDescription,
-        image: `${siteUrl}${image || defaultImage}`,
-        url: `${siteUrl}${pathname}`,
-    }
+    const defaultUrl = "https://tucsok.netlify.app" ;
 
     return (
-        <Helmet title={seo.title} titleTemplate={titleTemplate}>
-            <meta name="description" content={seo.description} />
-            <meta name="image" content={seo.image} />
-
-            {seo.url && <meta property="og:url" content={seo.url} />}
-
-            {(article ? true : null) && <meta property="og:type" content="article" />}
-
-            {seo.title && <meta property="og:title" content={seo.title} />}
-
-            {seo.description && (
-                <meta property="og:description" content={seo.description} />
-            )}
-
-            {seo.image && <meta property="og:image" content={seo.image} />}
-
-            <meta name="twitter:card" content="summary_large_image" />
-
-            {twitterUsername && (
-                <meta name="twitter:creator" content={twitterUsername} />
-            )}
-
-            {seo.title && <meta name="twitter:title" content={seo.title} />}
-
-            {seo.description && (
-                <meta name="twitter:description" content={seo.description} />
-            )}
-
-            {seo.image && <meta name="twitter:image" content={seo.image} />}
+        <Helmet htmlAttributes={{lang: lang}}>
+            {/* General tagek, az alap seóhoz */}
+            <title>{title}</title>
+            {description && <meta name="description" content={description}/>}
+            {keywords && <meta name="keywords" content={keywords}/>}
+            <link rel="canonical" href={defaultUrl + url}/>
+            <link rel="icon" href={favicon} sizes="any" type="image/svg+xml"/>
+            {/* Ha nem kell googleban indexelni */}
+            {noIndex && <meta name="robots" content="noindex" />}
+            {/* OpenGraph tagek, a social mediához */}
+            <meta property="og:title" content={title}/>
+            <meta property="og:url" content={defaultUrl + url}/>
+            {image ? <meta property="og:image" content={defaultUrl + image}/> : <meta property="og:image" content={defaultUrl + defaultImage}/>}
+            <meta property="og:image:width" content="1200"/>
+            <meta property="og:image:height" content="630"/>
+            {isBlogPost ? <meta property="og:type" content="article"/> : <meta property="og:type" content="website"/>}
+            {description && <meta property="og:description" content={description}/>}
+            <meta property="og:locale" content={lang}/>
         </Helmet>
     )
 }
 
-export default SEO
-
-SEO.propTypes = {
-    title: PropTypes.string,
-    description: PropTypes.string,
-    image: PropTypes.string,
-    article: PropTypes.bool,
-}
-
-SEO.defaultProps = {
-    title: null,
-    description: null,
-    image: null,
-    article: false,
-}
-
-const query = graphql`
-  query SEO {
-    site {
-      siteMetadata {
-        defaultTitle: title
-        titleTemplate
-        defaultDescription: description
-        siteUrl: url
-        defaultImage: image
-        twitterUsername
-      }
-    }
-  }
-`
+export default Seo
