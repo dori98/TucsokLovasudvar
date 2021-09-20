@@ -7,20 +7,17 @@
     row-gap: 50px;
     align-self: start;
     background-color:  white;
-
 }
 .title{
     text-align: center;
     font-size: 60px;
     color: rgba(93,154,6,1);
     padding: 30px;
-
 }
 .card{
     background-color: whitesmoke;
     box-shadow: 5px 5px 10px 6px #ccc;
 }
-
 .card--div{
     display: grid;
     grid-template-columns: 1fr ;
@@ -47,7 +44,6 @@
     color: black;
     padding:10px;
 }
-
 .card--image{
     min-height: 350px;
     max-height: 350px;
@@ -123,7 +119,6 @@
         color: black;
         padding:10px;
     }
-
     .card--image{
         min-height: 400px;
         max-height: 400px;
