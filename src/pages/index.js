@@ -2,7 +2,7 @@ import React from "react"
 import {graphql, Link} from "gatsby";
 import Image from "gatsby-image"
 import * as styles from "../css/index.module.css"
-import Seo from "../components/SEO";
+import Seo from "../components/Seo";
 
 const index = ({data}) => {
     const {

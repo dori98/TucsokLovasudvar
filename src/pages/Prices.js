@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/Layout";
 import {graphql, Link} from "gatsby"
 import * as styles from "../css/prices.module.css"
-import Seo from "../components/SEO";
+import Seo from "../components/Seo";
 
 const Prices = ({data}) => {
     const {

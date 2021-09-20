@@ -4,7 +4,7 @@ import {graphql} from "gatsby"
 import Image from "gatsby-image"
 import ReactMarkdown from "react-markdown"
 import * as styles from "../css/blog.module.css"
-import Seo from "../components/SEO";
+import Seo from "../components/Seo";
 
 const Blog = ({data}) => {
     const {

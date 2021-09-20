@@ -7,7 +7,7 @@ import ReactMarkdown from "react-markdown";
 const Story = ({data: {story: {cim, szoveg: {szoveg} }}} ) => {
     return (
         <Layout>
-            <div className={styles.page}>
+            <div >
                 <h1 className={styles.h1}>{cim}</h1>
                 <ReactMarkdown source={szoveg} className={styles.p}/>
                 <div className={styles.backButtonDiv}>

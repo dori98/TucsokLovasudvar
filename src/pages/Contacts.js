@@ -3,7 +3,7 @@ import {Link} from 'gatsby'
 import Layout from "../components/Layout"
 import  * as styles from "../css/contacts.module.css"
 import  * as style from "../css/prices.module.css"
-import Seo from "../components/SEO";
+import Seo from "../components/Seo";
 const Contacts = () => {
     return(
         <Layout>

@@ -3,7 +3,7 @@ import Layout from "../components/Layout"
 import {graphql, Link} from "gatsby"
 import * as styles from "../css/photos.module.css";
 import Image from "gatsby-image";
-import Seo from "../components/SEO";
+import Seo from "../components/Seo";
 
 const Pictures = ({data}) => {
     const {

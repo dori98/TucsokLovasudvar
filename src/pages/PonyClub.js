@@ -4,7 +4,7 @@ import Layout from "../components/Layout"
 import * as styles from "../css/ponyKlub.module.css"
 import * as style from "../css/prices.module.css"
 import Image from "gatsby-image";
-import Seo from "../components/SEO";
+import Seo from "../components/Seo";
 
 const PonyKlub = ({data}) => {
    const {
@@ -41,7 +41,7 @@ const PonyKlub = ({data}) => {
                                       {
                                           x.kepek.map(y=>{
                                               return(
-                                                  <div className={styles.galeryImgPosition}>
+                                                  <div >
                                                       <Image fluid={y.fluid} className={`${styles.galeryPhotosize} ${"image-for-modal"}`}/>
                                                   </div>
                                               )

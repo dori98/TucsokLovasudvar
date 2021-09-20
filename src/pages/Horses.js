@@ -4,7 +4,7 @@ import {graphql, Link} from "gatsby"
 
 import Image from "gatsby-image";
 import  * as styles from "../css/competitors.module.css"
-import Seo from "../components/SEO";
+import Seo from "../components/Seo";
 
 
 const Horses = ({data}) => {
