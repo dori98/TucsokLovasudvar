@@ -29,5 +29,4 @@ const Seo = ({lang, title, description, keywords, image, url, isBlogPost, noInde
         </Helmet>
     )
 }
-
 export default Seo
