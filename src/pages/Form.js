@@ -43,7 +43,25 @@ const Form = () => {
                         kapcsolatot.
                         Lovaglás csak előre egyeztetett időpontban lehetséges.
                     </p>
-                    <form
+                    <form name="contact" netlify>
+                        <p>
+                            <label>Name <input type="text" name="name" /></label>
+                        </p>
+                        <p>
+                            <label>Email <input type="email" name="email" /></label>
+                        </p>
+                        <p>
+                            <button type="submit">Send</button>
+                        </p>
+                    </form>
+
+                </article>
+            </section>
+        </Layout>
+    )
+}
+export default Form
+/*<form
                         action="https://gmail.us5.list-manage.com/subscribe/post?u=8d29b6f027a19d427131d32dd&amp;id=f203cbe20b"
                         method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
                         <div className={styles.formGroup}>
@@ -130,10 +148,4 @@ const Form = () => {
                                 Küldés
                             </button>
                         </div>
-                    </form>
-                </article>
-            </section>
-        </Layout>
-    )
-}
-export default Form
+                    </form>*/
