@@ -44,6 +44,8 @@ const Pictures = ({data}) => {
                                      <h2 className={styles.photosTitle}>{s.mappanev}</h2>
                                 </Link>
 
+                                <p>külön a versenyek és az edzések</p>
+
                             </div>
                         )
                     })

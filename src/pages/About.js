@@ -3,6 +3,7 @@ import {graphql} from "gatsby"
 import Layout from "../components/Layout"
 import Rita2 from "../assets/Rita3.jpg"
 import Rita3 from "../assets/Rita2.jpg"
+import lovarda from "../assets/lovarda_uj.jpeg"
 import Seo from "../components/Seo";
 
 import * as styles from "../css/about.module.css"
@@ -31,15 +32,21 @@ const ComponentName = ({data}) => {
                     return (
                         <div key={r.id} className={styles.gridContact}>
                             <h1 className={`${styles.fullwidth} ${styles.h1}`}>Bemutatkozás</h1>
-                            <img alt={"Rita a lovakkal"}  src={Rita2} className={`${styles.col6} ${styles.indexImg}`}/>
 
-                            <p className={`${styles.col6} ${styles.p}`}>{r.szoveg.szoveg} </p>
+                            <p className={`${styles.fullwidth} ${styles.p}`}>{r.szoveg.szoveg} </p>
+                            <img alt={"Rita a lovakkal"}  src={Rita2} className={`${styles.col6} ${styles.indexImg}`}/>
+                            <img alt={"lovardal"}  src={lovarda} className={`${styles.col6} ${styles.indexImg}`}/>
+
                         </div>
                     )
                 })}
             </div>
 
-            <div>
+
+        </Layout>
+    )
+}
+/*<div>
                 {bemutatkozas.map(r => {
                     return (
                         <div key={r.id} className={styles.gridContact}>
@@ -49,10 +56,7 @@ const ComponentName = ({data}) => {
                         </div>
                     )
                 })}
-            </div>
-        </Layout>
-    )
-}
+            </div>*/
 export const query = graphql`
  {
     allContentfulRolunk {

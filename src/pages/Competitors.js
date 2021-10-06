@@ -4,6 +4,7 @@ import { graphql, Link } from "gatsby"
 import Image from "gatsby-image"
 import  * as styles from "../css/competitors.module.css"
 import Seo from "../components/Seo";
+import * as style from "../css/prices.module.css";
 
 const Competitors = ({data}) => {
     const{
@@ -34,6 +35,9 @@ const Competitors = ({data}) => {
                         </div>
                     )
                 })}
+            </div>
+            <div className={` ${style.button}`}>
+                <Link to={'/Coach'}> Edzőnk</Link>
             </div>
         </Layout>
     )

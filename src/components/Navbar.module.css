@@ -33,11 +33,21 @@
 .menu--button{
     background-color: rgba(93,154,6,0.1) ;
     border: none;
+    color: black;
 }
 .close--button{
     margin: 20px;
-    font-size: 20px;
+    font-size: 25px;
     align-self: end;
+    color: black;
+    background-color: whitesmoke;
+    border:none;
+
+}
+.close--button:hover{
+
+    color: rgba(93,154,6,1);
+
 
 }
 
@@ -84,7 +94,7 @@
     bottom:0px;
     top:0px;
     z-index: 5;
-    line-height: 2.2;
+    line-height: 1.8;
     background-color: whitesmoke;
     box-shadow: 5px 5px 5px black;
 }

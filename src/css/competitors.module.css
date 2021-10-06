@@ -187,10 +187,9 @@
         justify-self: center;
     }
     .single--competitor--title h1 {
-        padding: 20px;
-        font-size: 45px;
+        padding: 20px 0 0 0;
+        font-size: 35px;
         color: darkgreen;
-        font-weight: bold;
         margin-bottom: 20px;
     }
     .single-competitor p {
@@ -303,7 +302,7 @@
         width: 95%;
     }
     .single-competitorImage {
-        max-height: 200px;
-        min-height: 200px;
+        max-height: 250px;
+        min-height: 250px;
     }
 }

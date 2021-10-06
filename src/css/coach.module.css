@@ -49,7 +49,7 @@
     display: grid;
     grid-template-columns: repeat(12,1fr);
     align-content: center;
-    width: 60%;
+    width: 70%;
     min-height: 70vh;
     margin: auto;
     padding: 50px;
@@ -72,8 +72,9 @@
     font-size: 22px;
     margin:auto;
     line-height: 1.3;
-    text-align: center;
+    text-align: left;
     padding-bottom: 30px;
+    letter-spacing: 0.8px;
 }
 @media screen and (min-width: 1980px) {
     .grid-contact {
@@ -94,7 +95,6 @@
         width: 90%;
         margin:auto;
         line-height: 1.25;
-        text-align: center;
     }
     .h1{
         font-size: 40px;
@@ -105,33 +105,66 @@
         font-size: 16px;
         margin:auto;
         line-height: 1.2;
-        text-align: center;
+        display: grid;
+        padding-top: 20px;
+
+    }
+    .index--img{
+        height: 350px;
+        width: auto;
+        margin: auto;
+        display: grid;
+        justify-self: center;
+        align-self: center;
+    }
+    .index--img--phone{
+        height: 350px;
+        width: auto;
+        margin: auto;
+        display: grid;
+        justify-self: center;
+        align-self: center;
     }
     .grid-contact {
-        width: 80%;
+        width: 90%;
     }
 
 
 }
 @media screen and (max-width:870px) {
 
-    .index--img{
-        max-width: 250px;
-        margin-bottom: 30px;
-    }
-}
-@media screen and (max-width:650px) {
 
     .index--img{
-        max-width: 250px;
-        margin-bottom: 30px;
+        height: 300px;
+    }
+
+    .p{
+        text-align: left;
+        line-height: 1.1;
+    }
+    .grid-contact{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        align-content: center;
+        width: 90%;
+        min-height: 70vh;
+        margin: auto;
+        padding:10px;
+        grid-gap:10px 10px;
+    }
+}
+@media screen and (max-width:780px) {
+
+    .col4{
+        grid-column: 1/-1;
+    }
+    .col8{
+        grid-column: 1/-1;
     }
     .p{
-        text-align: justify;
+        text-align: center;
     }
-    .col6{
-        grid-column:1/-1;
-    }
+
 }
 @media screen and (max-width:500px) {
     .grid-contact {
@@ -145,13 +178,14 @@
     }
     .h1{
         font-size: 25px;
+        margin-top: 20px;
     }
     .p{
         font-size: 15px;
         text-align: justify;
     }
     .index--img{
-        max-width: 330px;
-        margin-bottom: 30px;
+        height: 250px;
+        margin-bottom: 0;
     }
 }
