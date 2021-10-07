@@ -43,6 +43,7 @@ const Form = () => {
                         kapcsolatot.
                         Lovaglás csak előre egyeztetett időpontban lehetséges.
                     </p>
+                    
                     <form
                         method="POST"
                         data-netlify="true"
