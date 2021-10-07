@@ -43,7 +43,6 @@ const Form = () => {
                         kapcsolatot.
                         Lovaglás csak előre egyeztetett időpontban lehetséges.
                     </p>
-
                     <form
                         action="https://formspree.io/f/mdoygngk"
                         method="POST">
@@ -154,7 +153,8 @@ const Form = () => {
                                     value=""
                                 />
                             </div>
-                            <button type="submit" name="subscribe" id="mc-embedded-subscribe" className={`${styles.submitBtn} ${styles.btn}`}>
+                            <button type="submit" name="subscribe" id="mc-embedded-subscribe"
+                                    className={`${styles.submitBtn} ${styles.btn}`}>
                                 Küldés
                             </button>
                         </div>
