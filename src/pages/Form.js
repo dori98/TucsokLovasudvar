@@ -44,7 +44,7 @@ const Form = () => {
                         Lovaglás csak előre egyeztetett időpontban lehetséges.
                     </p>
                     <form
-                        action={"POST"}
+                        method={"POST"}
                         data-netlify={"true"}
                         >
                         <div className={styles.formGroup}>
