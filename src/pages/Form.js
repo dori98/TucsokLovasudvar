@@ -44,48 +44,47 @@ const Form = () => {
                         Lovaglás csak előre egyeztetett időpontban lehetséges.
                     </p>
 
-                    <form method="post"  data-netlify="true" name="contact">
-                        <label>
-                            Name
-                            <input type="text" name="name" id="name" />
-                        </label>
-                        <label>
-                            Email
-                            <input type="email" name="email" id="email" />
-                        </label>
-                        <label>
-                            Subject
-                            <input type="text" name="subject" id="subject" />
-                        </label>
-                        <label>
-                            Message
-                            <textarea name="message" id="message" rows="5" />
-                        </label>
-                        <button type="submit">Send</button>
-                        <input type="reset" value="Clear" />
-                    </form>
-
-                </article>
-            </section>
-        </Layout>
-    )
-}
-export default Form
-/*
- <form
-                        action="https://gmail.us5.list-manage.com/subscribe/post?u=8d29b6f027a19d427131d32dd&amp;id=f203cbe20b"
-                        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
+                    <form
+                        action="https://formspree.io/f/mdoygngk"
+                        method="POST">
                         <div className={styles.formGroup}>
-                            <input type="text" name="LNAME" id="mce-LNAME" required
-                                   className={styles.formControl} placeholder="Vezetéknév"/>
-                            <input type="text" name="FNAME" id="mce-FNAME" required
-                                   className={styles.formControl} placeholder="Keresztnév"/>
-                            <input type="email" name="EMAIL" id="mce-EMAIL" required
-                                   className={styles.formControl} placeholder="Email"/>
-                            <input type="text" name="MMERGE3" id="mce-MMERGE3" required
-                                   className={styles.formControl} placeholder="Telefonszám (+36701234567)"/>
-                            <input type="textarea" name="MMERGE4" id="mce-MMERGE4" rows="5"
-                                   placeholder="Megjegyzés" className={styles.formControl}/>
+                            <input type="text"
+                                   name="Vezetéknév"
+                                   id="Vezetéknév"
+                                   required
+                                   className={styles.formControl}
+                                   placeholder="Vezetéknév"
+                            />
+                            <input type="text"
+                                   name="Keresztnév"
+                                   id="Keresztnév"
+                                   required
+                                   className={styles.formControl}
+                                   placeholder="Keresztnév"
+                            />
+                            <input type="email"
+                                   name="Email"
+                                   id="Email"
+                                   required
+                                   className={styles.formControl}
+                                   placeholder="Email"
+                            />
+                            <input
+                                type="tel"
+                                name="Telefonszám"
+                                id="Telefonszám"
+                                placeholder="Telefonszám (+36701234567)"
+                                required={true}
+                                maxLength={12}
+                                className={styles.formControl}
+                            />
+                            <input type="textarea"
+                                   name="Megjegyzés"
+                                   id="Megjegyzés"
+                                   rows="5"
+                                   placeholder="Megjegyzés"
+                                   className={styles.formControl}
+                            />
                             <div className={styles.links}>
                                 <p>Kérlek töltsd ki az alábbi nyilatkozatokat és hozdd magaddal az első lovaglásra vagy
                                     küldd el e-mailben az alábbi emailcímre: tucsoklovasudvar@gmail.com
@@ -159,4 +158,11 @@ export default Form
                                 Küldés
                             </button>
                         </div>
-                    </form>*/
+                    </form>
+
+                </article>
+            </section>
+        </Layout>
+    )
+}
+export default Form
