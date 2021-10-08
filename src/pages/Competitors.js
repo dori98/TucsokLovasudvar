@@ -19,7 +19,7 @@ const Competitors = ({data}) => {
         <Layout>
             <Seo
                 lang={"hu"}
-                title={"Versenyzők"}
+                title={"Edzőnk és Versenyzőink"}
                 description={"A Tücsök lovasudvar  versenyzői."}
                 keywords={"tucsok, tücsök, lovarda, lovasudvar, ló, lo, lovasoktatás, lovasoktatas, versenyzők, versenyzok, verseny, díjlovaglás, dijlovaglas, díjugratás, dijugratas "}
                 url={"/Competitors"}
