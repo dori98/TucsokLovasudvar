@@ -35,9 +35,8 @@ const Navbar = () => {
                         </button>
                         <Link to='/' onClick={() => toLink()}>Főoldal</Link>
                         <Link to='/About' onClick={() => toLink()}>Rólunk</Link>
-                        <Link to='/Coach' onClick={() => toLink()}>Edzőnk</Link>
                         <Link to='/PonyClub' onClick={() => toLink()}>Tücsök Póni Klub</Link>
-                        <Link to='/Competitors' onClick={() => toLink()}>Versenyzők</Link>
+                        <Link to='/Competitors' onClick={() => toLink()}>Edzőnk és versenyzőink</Link>
                         <Link to='/Horses' onClick={() => toLink()}>Állataink</Link>
                         <Link to='/Pictures' onClick={() => toLink()}>Képek és történetek</Link>
                         <Link to='/Prices' onClick={() => toLink()}>Árak</Link>

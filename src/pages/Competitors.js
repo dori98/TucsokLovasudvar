@@ -3,12 +3,16 @@ import Layout from "../components/Layout"
 import { graphql, Link } from "gatsby"
 import Image from "gatsby-image"
 import  * as styles from "../css/competitors.module.css"
+import  * as styles2 from "../css/coach.module.css"
 import Seo from "../components/Seo";
 import * as style from "../css/prices.module.css";
+import Rita2 from "../assets/Rita5.2.jpg";
 
 const Competitors = ({data}) => {
     const{
         allContentfulVersenyzok:{nodes:people},
+        allContentfulBemutatkozas: {
+            nodes: bemutatkozas}
     }=data
 
     return(
@@ -20,6 +24,17 @@ const Competitors = ({data}) => {
                 keywords={"tucsok, tücsök, lovarda, lovasudvar, ló, lo, lovasoktatás, lovasoktatas, versenyzők, versenyzok, verseny, díjlovaglás, dijlovaglas, díjugratás, dijugratas "}
                 url={"/Competitors"}
             />
+            <div>
+                {bemutatkozas.map(r => {
+                    return (
+                        <div key={r.id} className={styles2.gridContact}>
+                            <h1 className={`${styles2.fullwidth} ${styles2.h1}`}>Edzőnk</h1>
+                            <img alt={"Rita a lovakkal"}  src={Rita2} className={`${styles2.col4} ${styles2.indexImg}`}/>
+                            <p className={`${styles2.col8} ${styles2.p}`}>{r.szoveg.szoveg} </p>
+                        </div>
+                    )
+                })}
+            </div>
             <div className={styles.competitorCompetitors}>
                 <h1>Versenyzőink</h1>
                 <p > Ha kíváncsi vagy mit jelent versenyzőink számára a lovaglás kattints a képükre!</p>
@@ -36,14 +51,20 @@ const Competitors = ({data}) => {
                     )
                 })}
             </div>
-            <div className={` ${style.button}`}>
-                <Link to={'/Coach'}> Edzőnk</Link>
-            </div>
+
         </Layout>
     )
 }
 export const query = graphql`
  {
+ allContentfulBemutatkozas {
+    nodes {
+      id
+      szoveg {
+        szoveg
+      }
+    }
+  },
     allContentfulVersenyzok (sort: {fields: nev, order: ASC}){
       nodes {
         nev

@@ -41,7 +41,7 @@ const PonyKlub = ({data}) => {
                                       {
                                           x.kepek.map(y=>{
                                               return(
-                                                  <div >
+                                                  <div key={y.id} >
                                                       <Image fluid={y.fluid} className={`${styles.galeryPhotosize} ${"image-for-modal"}`}/>
                                                   </div>
                                               )
@@ -65,10 +65,12 @@ export const query = graphql`
  {
     allContentfulPonyClub {
     nodes {
+
       szoveg {
         szoveg
       }
       kepek{
+        id
             fluid {
                 ...GatsbyContentfulFluid
             }

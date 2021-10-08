@@ -57,7 +57,7 @@
 }
 .index--img{
     display: grid;
-    width:40vh;
+    width:35vh;
     justify-self: center;
     height: auto;
     margin:auto;
