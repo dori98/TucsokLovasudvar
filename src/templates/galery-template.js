@@ -4,11 +4,19 @@ import Layout from "../components/Layout"
 import * as styles from "../css/photos.module.css"
 import Image from "gatsby-image";
 import  * as style from "../css/competitors.module.css"
+import Seo from "../components/Seo";
 
 const Galery = ({data} ) => {
     return (
         <Layout>
-
+            <Seo
+                noIndex
+                lang={"hu"}
+                title={"Képek "}
+                description={"A Tücsök lovasudvar képei"}
+                keywords={"tucsok, tücsök, lovarda, lovasudvar, tortenetek, történetek, képek, kepek"}
+                url={"/Pictures/{data.galery.mappanev}"}
+            />
             <div >
                 <h1 className={styles.galeryTitle}> {data.galery.mappanev}</h1>
                 <div className={styles.galeryPage}>
@@ -22,7 +30,6 @@ const Galery = ({data} ) => {
                         })
                     }
                 </div>
-
 
             </div>
             <div className={style.backButtonDiv}>

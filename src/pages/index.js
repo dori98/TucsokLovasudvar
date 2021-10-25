@@ -21,8 +21,8 @@ const index = ({data}) => {
             <Seo
                 lang={"hu"}
                 title={"Kezdőlap"}
-                description={"A Tücsök lovasudvar kezdőlap."}
-                keywords={"tucsok, tücsök, lovarda, lovasudvar, lovaglas, lovaglás, arak, árak, képek, kepek, bemutatkozas, bemutatkozás"}
+                description={"Tekintsd meg a Tücsök Lovasudvar honlapját."}
+                keywords={"Tücsök lovasudvar, Tucsok lovasudvar,Tücsöklovasudvar, Tucsoklovasudvar, tucsoklovasudvar, tücsöklovasudvar, tucsok, tücsök, lovarda, lovasudvar, lovaglas, lovaglás, arak, árak, képek, kepek, bemutatkozas, bemutatkozás"}
                 url={"/"}
             />
             <div className={styles.indexPage}>

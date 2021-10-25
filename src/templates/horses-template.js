@@ -3,10 +3,19 @@ import {graphql, Link} from "gatsby"
 import Layout from "../components/Layout"
 import Image from "gatsby-image"
 import * as styles from "../css/competitors.module.css"
+import Seo from "../components/Seo";
 
 const Horse = ({data: {animal: {nev, szoveg: {szoveg}, fenykep: {fluid}}}}) => {
     return (
         <Layout>
+            <Seo
+                noIndex
+                lang={"hu"}
+                title={"Állataink"}
+                description={"A Tücsök lovasudvarban található állatok."}
+                keywords={"tucsok, tücsök, lovarda, lovasudvar, ló, lo, Benedek Rita, lovasoktatás, lovasoktatas, macska, kutya, állat, allat"}
+                url={"/Horses/{nev}"}
+            />
             <div className={styles.singleCompetitorPage}>
                 <div style={{textAlign: "center"}} className={styles.singleCompetitorTitle}>
                     <h1>{nev}</h1>

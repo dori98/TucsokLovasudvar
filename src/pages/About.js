@@ -2,7 +2,6 @@ import React from "react"
 import {graphql} from "gatsby"
 import Layout from "../components/Layout"
 import Rita2 from "../assets/Rita3.jpg"
-import Rita3 from "../assets/Rita2.jpg"
 import lovarda from "../assets/lovarda_uj.jpeg"
 import Seo from "../components/Seo";
 

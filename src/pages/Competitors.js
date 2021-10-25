@@ -6,7 +6,7 @@ import  * as styles from "../css/competitors.module.css"
 import  * as styles2 from "../css/coach.module.css"
 import Seo from "../components/Seo";
 import * as style from "../css/prices.module.css";
-import Rita2 from "../assets/Rita5.2.jpg";
+import Rita2 from "../assets/Rita5.3.jpg";
 
 const Competitors = ({data}) => {
     const{

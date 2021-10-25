@@ -5,7 +5,7 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
         title: "TucsokLovasudvar",
-        description:`Tücsök lovasudvar honlapja`,
+        description:`Tücsök Lovasudvar honlapja`,
   },
 
   plugins: [

@@ -50,6 +50,7 @@
     font-size: 30px;
     padding: 15px;
     color: black;
+
 }
 /* single competitor pages*/
 .single--competitor--page {
@@ -95,7 +96,7 @@
     font-weight: bold;
 }
 .backButton:hover {
-    font-size: 40px;
+    font-size: 35px;
 }
 
 @media screen and (min-width: 1980px) {
@@ -149,7 +150,7 @@
 
     }
     .backButton:hover {
-        font-size: 32px;
+        font-size: 28px;
     }
     .single-competitorImage {
         max-width: 300px;
