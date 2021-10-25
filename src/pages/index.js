@@ -37,8 +37,7 @@ const index = ({data}) => {
                     <Link to='/Competitors'><Image fluid={versenyzok[0].tabla.fluid} className={styles.indexImg__box}/></Link>
                 </div>
                 <div className={styles.item5}>
-                    <h1>Tücsök</h1>
-                    <h1>Lovasudvar</h1>
+                    <h1>Tücsök<br/>Lovasudvar</h1>
                 </div>
                 <div className={`${styles.item6} ${styles.indexImg}`}>
                     <Link to='/Horses'><Image fluid={allataink[0].tabla.fluid} className={styles.indexImg__box}/></Link>
