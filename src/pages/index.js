@@ -22,7 +22,7 @@ const index = ({data}) => {
                 lang={"hu"}
                 title={"Kezdőlap"}
                 description={"Tekintsd meg a Tücsök Lovasudvar honlapját."}
-                keywords={"Tücsök lovasudvar, Tucsok lovasudvar,Tücsöklovasudvar, Tucsoklovasudvar, tucsoklovasudvar, tücsöklovasudvar, tucsok, tücsök, lovarda, lovasudvar, lovaglas, lovaglás, arak, árak, képek, kepek, bemutatkozas, bemutatkozás"}
+                keywords={"Tücsök lovasudvar, Tucsok lovasudvar,Tücsöklovasudvar, Tucsoklovasudvar, tucsoklovasudvar,bodmér, bodmer, bodmér lovarda, bodmer lovarda, lovarda, lovardák, Benedek Rita, lovasoktató, lovasoktato, vértesboglár, vértesboglár lovarda, tereplovaglás, futószár, futoszar, bicske, bicske lovarda, felcsút, felcsút lovarda, lovarda felcsút, ló, lo, lovak, lovastanya, lovaskocsi, póni, póniklub, poni klub, pony , legjobb lovardák, legjobb lovardak, lovasoktato, lovasedzo, turavezeto, tücsöklovasudvar, tucsok, tücsök, lovarda, lovasudvar, lovaglas, lovaglás, arak, árak, képek, kepek, bemutatkozas, bemutatkozás"}
                 url={"/"}
             />
             <div className={styles.indexPage}>
