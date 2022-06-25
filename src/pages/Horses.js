@@ -95,27 +95,3 @@ export const query = graphql`
   }
 `
 export default Horses
-/* <Layout>
-            <div className={styles.horsesFullPage}>
-                <h1 className={styles.horsesTitle}>Lovaink</h1>
-                <div className={styles.horsesPage}>
-                    {horses.map(horse => {
-                        return (
-                            <Card key={horse.id} title={horse.nev} description={horse.szoveg.szoveg}
-                                  img={horse.fenykep.fluid}/>
-                        )
-                    })}
-                </div>
-                <h1 className={styles.horsesTitle}>Kutyáink és macskáink </h1>
-                <h3 className={styles.horsesH3}>A házörző és rágcsálóírtó részleg</h3>
-                <div className={styles.horsesPage}>
-
-                    {dc.map(d => {
-                        return (
-                            <Card key={d.id} title={d.nev} description={d.szoveg.szoveg}
-                                  img={d.fenykep.fluid}/>
-                        )
-                    })}
-                </div>
-            </div>
-        </Layout>*/

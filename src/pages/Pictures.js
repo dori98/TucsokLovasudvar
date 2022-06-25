@@ -96,22 +96,3 @@ export const query = graphql`
   }
 `
 export default Pictures
-/*<div className={styles.photosPage}>
-                    <ImageGallery showPlayButton={false} className={styles.galery} style={{zIndex: '-1'}} items={images.map((item) => (
-                            {
-                                original: item.fenykep.fluid.src,
-                                thumbnail: item.fenykep.fluid.src,
-                            }
-                        )
-                    )}/>
-                </div>*/
-/*   {
-                                    s.kepek.map(x=>{
-                                        return(
-                                            <div key={x.id}>
-                                                <Image fluid={x.fluid} className={styles.photosMapsize}/>
-
-                                            </div>
-                                        )
-                                    })
-                                }*/
